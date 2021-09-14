@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Youtube Video</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <br><br>
+            <h1 class="text-center">
+                Random Youtube Video in JS
+            </h1>
+            <form id="myForm" autocomplete="off">
+                <div class="form-group">
+                    <button class="btn btn-block btn-danger">
+                        Get Photo
+                    </button>
+                </div>                
+            </form>
+        <img id="img" class="img-thumnail"/>
+        </div>
+    </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+
+            $("#myForm").submit(function(e) {
+                e.preventDefault()
+                
+                var videos = [
+                'pRpvdcjkT3k',
+                'Te4wx4jtiEA',
+                'efTj6UYzvk4'
+                ];
+    
+                var index=Math.floor(Math.random() * videos.length);
+                var html='<div id="video"><h3>Random Video</h3><iframe width="720" height="480"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                document.write(html);
+            })
+
+        </script>
+</html>

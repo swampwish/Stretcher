@@ -47,7 +47,8 @@
                 ];
     
                 var index=Math.floor(Math.random() * videos.length);
-                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                var vid = videos[index];
+                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + vid + '?autoplay=1&loop=1&playlist=' + vid + '" frameborder="0" allowfullscreen></iframe></div>';
                 document.write(html);
             })
 
@@ -64,7 +65,8 @@
                 ];
     
                 var index=Math.floor(Math.random() * videos.length);
-                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                var vid = videos[index];
+                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + vid + '?autoplay=1&loop=1&playlist=' + vid + '" frameborder="0" allowfullscreen></iframe></div>';
                 document.write(html);
             })
 

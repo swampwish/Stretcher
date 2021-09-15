@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Random Youtube Video</title>
+        <title>Swamptown Stretches</title>
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,12 +11,12 @@
         <div class="container">
             <br><br>
             <h1 class="text-center">
-                Random Youtube Video in JS
+                Let's do this!
             </h1>
             <form id="myForm" autocomplete="off">
                 <div class="form-group">
                     <button class="btn btn-block btn-danger">
-                        Get Photo
+                        GO
                     </button>
                 </div>                
             </form>
@@ -30,13 +30,14 @@
                 e.preventDefault()
                 
                 var videos = [
-                'pRpvdcjkT3k',
-                'Te4wx4jtiEA',
-                'efTj6UYzvk4'
+                '2L2lnxIcNmo',
+                '5v0wgJTqSaY',
+                '5PbrPKiLCi0',
+                'KmwkMPnzL40'
                 ];
     
                 var index=Math.floor(Math.random() * videos.length);
-                var html='<div id="video"><h3>Random Video</h3><iframe width="720" height="480"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                var html='<div id="video"><h3>Random Video</h3><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
                 document.write(html);
             })
 

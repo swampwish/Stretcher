@@ -16,7 +16,14 @@
             <form id="myForm" autocomplete="off">
                 <div class="form-group">
                     <button class="btn btn-block btn-danger">
-                        GO
+                        Stretches
+                    </button>
+                </div>                
+            </form>
+            <form id="myForm2" autocomplete="off">
+                <div class="form-group">
+                    <button class="btn btn-block btn-danger">
+                        Workout
                     </button>
                 </div>                
             </form>
@@ -32,14 +39,32 @@
                 var videos = [
                 '2L2lnxIcNmo',
                 '5v0wgJTqSaY',
-                '5PbrPKiLCi0',
                 'KmwkMPnzL40',
                 'whf9pRHbH0o',
-                'v0_Wzk9cptA'
+                'v0_Wzk9cptA',
+                'st6YgM4pgrM',
+                'NsslSF7_m0c'
                 ];
     
                 var index=Math.floor(Math.random() * videos.length);
-                var html='<div id="video"><h3>Random Video</h3><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+                document.write(html);
+            })
+
+            $("#myForm2").submit(function(e) {
+                e.preventDefault()
+                
+                var videos = [
+                'wUmCiqj0iVo',
+                'y2RAEnWreoE',
+                'SY8lCLwd760',
+                'Tz9d7By2ytQ',
+                'ZtNAGrM1gMM',
+                '6auB47_9Kq4'
+                ];
+    
+                var index=Math.floor(Math.random() * videos.length);
+                var html='<div id="video" align="center"><iframe width="1280" height="720"   src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
                 document.write(html);
             })
 
